@@ -1,0 +1,1 @@
+# Generic-Recyclerview-Adapter
