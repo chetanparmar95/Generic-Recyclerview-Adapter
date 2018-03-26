@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.genericrecyclerview.model.Model1" />
+
+        <variable
+            name="listener"
+            type="com.genericrecyclerview.activity1.OnUserClickListener"/>
+
+    </data>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="chetan"
+        android:padding="10dp"
+        android:text="@{model.name}"
+        android:onClick="@{()->listener.onUserClicked(model.name)}"
+        />
+</layout>
